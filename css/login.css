@@ -1,0 +1,130 @@
+:root {
+	--input-width: 250px;
+	--input-padding: 10px; 
+}
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+body {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+
+	min-height: 100vh;
+
+	font-family: Verdana, Geneva, sans-serif;
+
+	background-color: whitesmoke;
+}
+label {
+	display: none;
+}
+input {
+	width: calc(var(--input-width) - calc(var(--input-padding) * 2));
+	padding: 4px var(--input-padding);
+	border-radius: 3px;
+	width: 100%;
+	min-height: 28px;
+
+	font-size: 1.05em;
+
+	background-color: whitesmoke;
+	border: 1px solid gray;
+	outline: none;
+}
+button, input[type="submit"] {
+	width: calc(var(--input-width) + 2px);
+	padding: 7px;
+	border-radius: 3px;
+	width: 100%;
+	margin-top: 14px;
+
+	font-size: 1.05em;
+
+	color: white;
+	background-color: midnightblue;
+	border: none;
+	outline: none;
+
+	cursor: pointer;
+}
+button:active, input[type="submit"]:active {
+	background-color: darkblue;
+}
+button:disabled, input[type="submit"]:disabled {
+	background-color: gray;
+	cursor: wait;
+}
+p {
+	font-size: 0.95em;
+}
+a {
+	text-decoration: none;
+	color: midnightblue;
+}
+a:active {
+	color: darkblue;
+	background-color: lightgray;
+}
+h1 {
+	font-size: 1.25em;
+	font-weight: normal;
+	margin-bottom: 12px;
+}
+#noscript {
+	position: fixed;
+	left 0;
+	top: 0;
+	width: 100%;
+	padding: 8px 0;
+	text-align: center;
+	background-color: palegoldenrod;
+}
+.box {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+
+	min-width: 270px;
+	max-width: 270px;
+	padding: 24px;
+
+	background-color: white;
+	border: 1px solid black;
+}
+.box:nth-child(n+3) {
+	margin-top: 24px;
+}
+.row {
+	display: flex;
+	align-items: center;
+
+	width: 100%;
+
+	margin-top: 8px;
+	text-space-collapse: 
+}
+.info {
+	margin-left: 8px;
+	width: 22px;
+	height: auto;
+	cursor: help;
+}
+input.error {
+	border-color: indianred;
+	background-color: lightpink;
+}
+div.error {
+	width: 100%;
+	margin: 1px 0 8px 0;
+	text-align: left;
+	color: indianred;
+}
+#main-error {
+	margin: 8px 0 0 0;
+	text-align: center;
+}
