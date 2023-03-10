@@ -1,0 +1,8 @@
+# Normalise line endings
+* text=auto
+
+# Show SQL in language stats
+*.sql linguist-detectable=true
+
+# Count as Docker in language stats
+docker-compose.yml linguist-language=dockerfile

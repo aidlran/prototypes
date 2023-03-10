@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    ports:
+      - 8080:80
+    links:
+      - mysql
+  mysql:
+    build:
+      context: sql
+    environment:
+      MYSQL_DATABASE: pm
+      MYSQL_ROOT_PASSWORD: pm
